@@ -1,0 +1,22 @@
+div {
+    border: 2px dotted brown;
+    width: 40%;
+}
+.segun-rice {
+    border: 5px solid blue;
+}
+#with-bg {
+    background-color: brown;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+#relative {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 50%;
+}
+p {
+    background-color: yellow;
+}

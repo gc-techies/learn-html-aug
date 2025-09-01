@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #container960 {
+            /* background-color: yellow; */
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .twoCols {
+            width: 620px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: blue;
+        }
+
+        .oneCol {
+            width: 300px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: yellow;
+            border-radius: 20px;
+        }
+
+        #colReversed {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div id="container960">
+        <h1>welcome to Flexbox</h1>
+        <div class="row">
+            <p class="oneCol">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+            <p class="oneCol">paragraph two</p>
+            <p class="oneCol">paragraph three</p>
+        </div>
+
+        <div class="row">
+            <div class="twoCols">
+                two columns of 300px combined together
+            </div>
+            <div class="oneCol" id="colReversed">
+                <img src="tobi.png" alt="" width="100%">
+                <p>this is tobi</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="oneCol">
+                sample text
+            </div>
+            <div class="twoCols">
+                two columns of 300px combined together
+            </div>
+        </div>
+    </div>
+</body>
+</html>
