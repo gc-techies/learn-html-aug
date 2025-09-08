@@ -37,6 +37,32 @@
             display: flex;
             flex-direction: column-reverse;
         }
+
+        @media screen and (max-width: 450px) {
+            #container960 {
+                /* background-color: yellow; */
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }            
+
+            .oneCol {
+                width: 100%;
+                margin-left: 10px;
+                margin-right: 10px;
+                background-color: yellow;
+                border-radius: 20px;
+                margin-bottom: 10px;
+            }
+
+            .twoCols {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media screen and (max-width: 850px) and (min-width: 451px) {
+
+        }
     </style>
 </head>
 <body>
@@ -44,7 +70,9 @@
         <h1>welcome to Flexbox</h1>
         <div class="row">
             <p class="oneCol">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
-            <p class="oneCol">paragraph two</p>
+            <p class="oneCol">
+                Cras tellus purus, pellentesque nec arcu a, suscipit interdum leo. Ut interdum tempor elementum. Proin luctus sit amet lectus in venenatis. Suspendisse vulputate, sapien sed viverra accumsan, urna metus rhoncus ipsum, vitae malesuada est sem quis diam. Phasellus egestas dolor ac nibh lacinia sollicitudin. Morbi mattis metus et ante porta, nec vulputate lorem ornare. Cras semper arcu vitae nisl tincidunt, et dignissim sem bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis, tortor ac aliquet finibus, massa ante tincidunt sem, eget vehicula turpis elit tincidunt dui. Nam finibus nunc eu orci imperdiet iaculis. Curabitur viverra dolor ut nibh sollicitudin, ac pretium risus faucibus. Integer lobortis ex quis tempor euismod.
+            </p>
             <p class="oneCol">paragraph three</p>
         </div>
 
